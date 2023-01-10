@@ -1,0 +1,78 @@
+.about-me {
+    height: 100vh;
+    padding: 0 200px 0 150px;
+    display: flex;
+    align-items: center;
+}
+
+.about-me .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.about-me .text-container h3 {
+    font-size: 50px;
+}
+
+.about-me .text-container h3 span {
+    background-color: #F0F2F5;
+    background-image: linear-gradient(100deg, rgba(177, 108, 234, 1) 0%, rgba(255, 94, 105, 1) 38%, rgba(255, 138, 86, 1) 78%, rgba(255, 168, 75, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.about-me .text-container p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-me .text-container p span {
+    background-color: #F0F2F5;
+    background-image: linear-gradient(100deg, rgba(177, 108, 234, 1) 0%, rgba(255, 94, 105, 1) 38%, rgba(255, 138, 86, 1) 78%, rgba(255, 168, 75, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.location i {
+    font-size: 25px;
+    background-color: #F0F2F5;
+    background-image: linear-gradient(100deg, rgba(177, 108, 234, 1) 0%, rgba(255, 94, 105, 1) 38%, rgba(255, 138, 86, 1) 78%, rgba(255, 168, 75, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1100px) {
+    .about-me {
+        padding: 0 40px;
+    }
+
+    .about-me img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .about-me .text-container h3 {
+        font-size: 40px;
+    }
+
+    .about-me .text-container p {
+        font-size: 15px;
+    }
+}
