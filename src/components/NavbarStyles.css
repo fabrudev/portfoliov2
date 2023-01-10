@@ -1,0 +1,77 @@
+.navbar {
+    padding: 30px 100px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.navbar p {
+    font-size: 25px;
+    font-weight: 700;
+    cursor: default;
+}
+
+.navbar p span {
+    background-color: #F0F2F5;
+    background-image: linear-gradient(100deg, rgba(177,108,234,1) 0%, rgba(255,94,105,1) 38%, rgba(255,138,86,1) 78%, rgba(255,168,75,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.horizontal-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    padding: 3px 5px;
+    border-radius: 2px;
+    color: #F0F2F5;
+}
+
+.navbar a:hover {
+    background: rgb(177,108,234);
+    background: linear-gradient(100deg, rgba(177,108,234,1) 0%, rgba(255,94,105,1) 38%, rgba(255,138,86,1) 78%, rgba(255,168,75,1) 100%);
+}
+
+.vertical-menu {
+    margin-top: 3px;
+    padding: 10px 0 5px 0;
+    position: absolute;
+    display: none;
+    width: 180px;
+    background: rgba(22, 21, 19, .5);
+    border-radius: 6px;
+}
+
+.vertical-menu li {
+    margin-bottom: 10px;
+}
+
+.horizontal-menu li:hover .vertical-menu {
+    display: block;
+}
+
+.vertical-menu a {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        justify-content: center;
+    }
+    .horizontal-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        padding: 20px 0;
+    }
+}
+

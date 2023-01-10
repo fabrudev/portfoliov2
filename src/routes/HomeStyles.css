@@ -1,0 +1,82 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home img {
+    height: 360px;
+}
+
+.home .text-container {
+    text-align: center;
+    margin-bottom: 35px;
+    cursor: default;
+}
+
+.home .text-container h1 {
+    font-size: 60px;
+    background-color: #F0F2F5;
+    background-image: linear-gradient(100deg, rgba(177, 108, 234, 1) 0%, rgba(255, 94, 105, 1) 38%, rgba(255, 138, 86, 1) 78%, rgba(255, 168, 75, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.home .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    background: rgb(177, 108, 234);
+    background: linear-gradient(100deg, rgba(177, 108, 234, 1) 0%, rgba(255, 94, 105, 1) 38%, rgba(255, 138, 86, 1) 78%, rgba(255, 168, 75, 1) 100%);
+    color: #F0F2F5;
+}
+
+.home .button:hover {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #F0F2F5;
+}
+
+
+@media screen and (max-width: 520px) {
+    .home img {
+        height: 320px;
+    }
+
+    .home img {
+        margin-top: 20px;
+    }
+
+    .home .text-container h1 {
+        font-size: 45px;
+    }
+
+    .home .text-container {
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .home img {
+        height: 280px;
+    }
+
+    .home .text-container h1 {
+        font-size: 35px;
+    }
+
+    .home .text-container {
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+}
