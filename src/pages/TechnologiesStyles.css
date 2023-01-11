@@ -1,0 +1,74 @@
+.technologies {
+    height: 100vh;
+}
+
+.technologies .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.technologies .title-container h3 {
+    font-size: 50px;
+}
+
+.technologies .title-container .line {
+    height: 15px;
+    width: 500px;
+    background: rgb(177, 108, 234);
+    background: linear-gradient(100deg, rgba(177, 108, 234, 1) 0%, rgba(255, 94, 105, 1) 38%, rgba(255, 138, 86, 1) 78%, rgba(255, 168, 75, 1) 100%);
+
+}
+
+.technology {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: #1C1C22;
+}
+
+.technology .face {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.technology .front {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.technology .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.technology .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #1C1C22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology .back p {
+    font-weight: 700;
+}
+
+.technology:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.technology:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
