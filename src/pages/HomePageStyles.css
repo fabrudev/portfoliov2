@@ -1,5 +1,5 @@
 .home {
-    height: 100vh;
+    height: calc(100vh - 90px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,6 +47,11 @@
     border: 1px solid #F0F2F5;
 }
 
+@media screen and (min-width: 1445px) {
+    .home {
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width: 520px) {
     .home img {
