@@ -27,24 +27,23 @@
 }
 
 .navbar a {
-    padding: 3px 5px;
+    padding: 3px 5px 3px 0px;
     border-radius: 2px;
     color: #F0F2F5;
 }
 
 .navbar a:hover {
-    background: rgb(177,108,234);
-    background: linear-gradient(100deg, rgba(177,108,234,1) 0%, rgba(255,94,105,1) 38%, rgba(255,138,86,1) 78%, rgba(255,168,75,1) 100%);
+    border-bottom: 1px solid #F0F2F5;
 }
 
 .vertical-menu {
-    margin-top: 3px;
-    padding: 10px 0 0 0;
+    padding: 10px 0 0 5px;
     position: absolute;
     display: none;
     width: 150px;
-    background: rgba(22, 21, 19, .5);
-    border-radius: 6px;
+    background: rgb(22, 21, 19);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .vertical-menu li {
