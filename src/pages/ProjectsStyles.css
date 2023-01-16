@@ -70,6 +70,10 @@
     padding: 20px 30px;
 }
 
+.project-responsive {
+    display: none;
+}
+
 .project-container .img-container {
     width: 100%;
     margin-bottom: 7px;
@@ -175,4 +179,49 @@
         font-size: 16px;
     }
 }
+
+@media screen and (max-width: 470px) {
+    .projects-all-container {
+        justify-content: flex-start;
+        gap: 25px;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .projects-arrow-btns {
+        display: none;
+    }
+
+    .project-responsive {
+        display: block;
+    }
+
+    .project-not-responsive {
+        display: none;
+    }
+
+    .project-container {
+        width: 40%;
+        background: #1C1C22;
+        padding: 15px 25px;
+    }
+
+    .project-container .title h4 {
+        font-size: 17px;
+    }
+
+    .project-container .title i {
+        width: 22px;
+        height: 22px;
+        font-size: 12px;
+    }
+
+    .project-technologies p {
+        font-size: 11px;
+    }
+} 
 

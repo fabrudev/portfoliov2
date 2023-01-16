@@ -3,6 +3,7 @@ import './ProjectsStyles.css';
 import ecommerce from '../assets/projects-images/ecommerce.png';
 import pokedex from '../assets/projects-images/pokedex.png';
 import landingPage from '../assets/projects-images/landing-page.png';
+import Project from '../components/Project';
 
 const Projects = () => {
 
@@ -49,7 +50,7 @@ const Projects = () => {
             <div className="projects-all-container">
                 <div className="projects-container">
                     <button onClick={back} className='projects-arrow-btns'><i className="fa-solid fa-caret-left"></i></button>
-                    <div className="project-container">
+                    <div className="project-container project-not-responsive">
                         <div className="img-container">
                             <img src={projectImage[counter]} alt="screen" />
                         </div>
@@ -64,6 +65,24 @@ const Projects = () => {
                             <button>Ver Más</button>
                         </div>
                     </div>
+                    <Project 
+                        img={projectImage[0]} 
+                        title={projectTitle[0]}
+                        link={projectLink[0]}
+                        technologies={projectTechnologies[0]}
+                    />
+                    <Project 
+                        img={projectImage[1]} 
+                        title={projectTitle[1]}
+                        link={projectLink[1]}
+                        technologies={projectTechnologies[1]}
+                    />
+                    <Project 
+                        img={projectImage[2]} 
+                        title={projectTitle[2]}
+                        link={projectLink[2]}
+                        technologies={projectTechnologies[2]}
+                    />
                     <button onClick={next} className='projects-arrow-btns'><i className="fa-solid fa-caret-right"></i></button>
                 </div>
                 <button className='projects-btn'>VER TODOS</button>
