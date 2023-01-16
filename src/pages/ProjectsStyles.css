@@ -1,0 +1,147 @@
+.projects {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.projects .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+
+.projects .title-container h3 {
+    font-size: 50px;
+}
+
+.projects .title-container .line {
+    height: 15px;
+    width: 500px;
+    background: rgb(177, 108, 234);
+    background: linear-gradient(100deg, rgba(177, 108, 234, 1) 0%, rgba(255, 94, 105, 1) 38%, rgba(255, 138, 86, 1) 78%, rgba(255, 168, 75, 1) 100%);
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.projects-arrow-btns {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: rgb(177, 108, 234);
+    background: linear-gradient(100deg, rgba(177, 108, 234, 1) 0%, rgba(255, 94, 105, 1) 38%, rgba(255, 138, 86, 1) 78%, rgba(255, 168, 75, 1) 100%);
+}
+
+.projects-arrow-btns i {
+    font-size: 30px;
+    color: #F0F2F5;
+}
+
+.projects-arrow-btns:hover {
+    cursor: pointer;
+    background: transparent;
+    border: 3px solid #F0F2F5;
+    transition: .1s;
+}
+
+/* LLEVAR A COMPONENTE PROJECT */
+
+.project-container {
+    width: 30%;
+    background: #1C1C22;
+    padding: 20px 30px;
+}
+
+.project-container .img-container {
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.project-container .img-container img {
+    width: 100%;
+}
+
+.project-container .title {
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-container .title:hover {
+    cursor: pointer;
+}
+
+.project-container .title:hover h4 {
+    text-decoration: underline;
+}
+
+.project-container .title h4 {
+    font-size: 25px;
+    color: #F0F2F5;
+}
+
+.project-container .title i {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F2F5;
+    color: #1C1C22;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.project-container .subtitle {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.project-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-technologies {
+    display: flex;
+    gap: 10px;
+}
+
+.project-technologies p {
+    font-size: 11px;
+}
+
+.project-bottom button {
+    display: none;
+}
+
+.projects-btn {
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    color: #F0F2F5;
+    background: rgb(177, 108, 234);
+    background: linear-gradient(100deg, rgba(177, 108, 234, 1) 0%, rgba(255, 94, 105, 1) 38%, rgba(255, 138, 86, 1) 78%, rgba(255, 168, 75, 1) 100%);
+}
+
+.projects-btn:hover {
+    cursor: pointer;
+    background: transparent;
+    border: 3px solid #F0F2F5;
+    transition: .1s;
+}
