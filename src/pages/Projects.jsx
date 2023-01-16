@@ -1,8 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ProjectsStyles.css';
-import screen from '../assets/screen.png'
+import ecommerce from '../assets/projects-images/ecommerce.png';
+import pokedex from '../assets/projects-images/pokedex.png';
+import landingPage from '../assets/projects-images/landing-page.png';
 
 const Projects = () => {
+
+    const [ counter, setCounter ] = useState(0);
+
+    const projectImage = [ecommerce, pokedex, landingPage];
+    const projectTitle = ['E-Commerce', 'Pokédex', 'Landing Page'];
+    const projectLink = [
+        'https://store-fabrudev.netlify.app/',
+        'https://pokedex-fabrudev.netlify.app/',
+        'https://landingpage-fabrudev.netlify.app'
+    ]
+    const projectTechnologies = [
+        'HTML CSS REACT REDUX API',
+        'HTML CSS REACT REDUX API',
+        'HTML CSS REACT'
+    ];
+
+    const next = () => {
+        if (counter === 2) {
+            setCounter(0)
+        } else {
+            setCounter(counter+1)
+        }
+    }
+
+    const back = () => {
+        if (counter === 0) {
+            setCounter(2)
+        } else {
+            setCounter(counter-1)
+        }
+    }
+    
+    console.log(counter);
+
     return (
         <div className='projects'>
             <div className="title-container">
@@ -10,31 +46,28 @@ const Projects = () => {
                 <h3>Proyectos</h3>
                 <div className="line"></div>
             </div>
-            <div className="projects-container">
-                <button className='projects-arrow-btns'><i className="fa-solid fa-caret-left"></i></button>
-                <div className="project-container">
-                    <div className="img-container">
-                        <img src={screen} alt="screen" />
-                    </div>
-                    <a href='#' className="title">
-                        <h4>Title</h4>
-                        <i className="fa-solid fa-up-right-from-square"></i>
-                    </a>
-                    <p className='subtitle'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid id magnam repellendus, nam nostrum, ipsum aut quo magni quaerat, officia cum quasi labore culpa autem eligendi! Perferendis, itaque iusto.</p>
-                    <div className="project-bottom">
-                        <div className="project-technologies">
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>REACT</p>
-                            <p>REDUX</p>
-                            <p>API</p>
+            <div className="projects-all-container">
+                <div className="projects-container">
+                    <button onClick={back} className='projects-arrow-btns'><i className="fa-solid fa-caret-left"></i></button>
+                    <div className="project-container">
+                        <div className="img-container">
+                            <img src={projectImage[counter]} alt="screen" />
                         </div>
-                        <button>Ver Más</button>
+                        <a href={projectLink[counter]} target='_blank' className="title">
+                            <h4>{projectTitle[counter]}</h4>
+                            <i className="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                        <div className="project-bottom">
+                            <div className="project-technologies">
+                                <p>{projectTechnologies[counter]}</p>
+                            </div>
+                            <button>Ver Más</button>
+                        </div>
                     </div>
+                    <button onClick={next} className='projects-arrow-btns'><i className="fa-solid fa-caret-right"></i></button>
                 </div>
-                <button className='projects-arrow-btns'><i className="fa-solid fa-caret-right"></i></button>
+                <button className='projects-btn'>VER TODOS</button>
             </div>
-            <button className='projects-btn'>VER TODOS</button>
         </div>
     );
 };
