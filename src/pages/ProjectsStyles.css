@@ -205,13 +205,14 @@
     }
 
     .project-container {
-        width: 40%;
+        width: 58%;
         background: #1C1C22;
-        padding: 15px 25px;
+        padding: 0 0 12px 0;
     }
 
     .project-container .title h4 {
         font-size: 17px;
+        margin-left: 10px;
     }
 
     .project-container .title i {
@@ -222,6 +223,7 @@
 
     .project-technologies p {
         font-size: 11px;
+        margin-left: 10px;
     }
 } 
 
