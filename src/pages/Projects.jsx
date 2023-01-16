@@ -77,12 +77,6 @@ const Projects = () => {
                         link={projectLink[1]}
                         technologies={projectTechnologies[1]}
                     />
-                    <Project 
-                        img={projectImage[2]} 
-                        title={projectTitle[2]}
-                        link={projectLink[2]}
-                        technologies={projectTechnologies[2]}
-                    />
                     <button onClick={next} className='projects-arrow-btns'><i className="fa-solid fa-caret-right"></i></button>
                 </div>
                 <button className='projects-btn'>VER TODOS</button>
