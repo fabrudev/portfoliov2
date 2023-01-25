@@ -1,0 +1,78 @@
+.route-project {
+    padding: 0 0 12px 0;
+    width: 50%;
+    background: #1C1C22;
+}
+
+.route-project .img-container {
+    width: 100%;
+}
+
+.route-project .img-container img {
+    width: 100%;
+}
+
+.route-project a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #F0F2F5;
+    margin-top: 7px;
+}
+
+.route-project a:hover {
+    text-decoration: underline;
+}
+
+.route-project a h4 {
+    margin-left: 3%;
+    font-size: 40px;
+    color: #F0F2F5;
+}
+
+.route-project a i {
+    padding: 5px;
+    font-size: 20px;
+    background: #F0F2F5;
+    color: #1C1C22;
+    border-radius: 7px;
+}
+
+.route-project p {
+    margin-left: 3%;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+    .route-project a h4 {
+        font-size: 25px;
+    }
+
+    .route-project a i {
+        font-size: 13px;
+    }
+
+    .route-project p {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 606px) {
+    .route-project a {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .route-project a h4 {
+        font-size: 15px;
+    }
+
+    .route-project a i {
+        font-size: 10px;
+    }
+
+    .route-project p {
+        text-align: center;
+        font-size: 7px;
+    }
+}

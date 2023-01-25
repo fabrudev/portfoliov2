@@ -64,6 +64,10 @@
     transition: .1s;
 }
 
+.projects-arrow-btns:active {
+    transform: scale(0.9);
+}
+
 .project-container {
     width: 45%;
     background: #1C1C22;

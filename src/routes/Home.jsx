@@ -1,16 +1,20 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 import AboutMe from '../pages/AboutMe';
 import HomePage from '../pages/HomePage';
-import Projects from '../pages/Projects';
+import ProjectsPage from '../pages/ProjectsPage';
 import Technologies from '../pages/Technologies';
 
 const Home = () => {
     return (
         <>
+            <div className="App">
+                <Navbar />
+            </div>
             <HomePage />
             <AboutMe />
             <Technologies />
-            <Projects />
+            <ProjectsPage />
         </>
     );
 };

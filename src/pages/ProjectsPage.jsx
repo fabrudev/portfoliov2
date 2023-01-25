@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
-import './ProjectsStyles.css';
+import './ProjectsPageStyles.css';
 import ecommerce from '../assets/projects-images/ecommerce.png';
 import pokedex from '../assets/projects-images/pokedex.png';
 import landingPage from '../assets/projects-images/landing-page.png';
 import Project from '../components/Project';
+import Projects from '../routes/Projects';
+import { useNavigate } from 'react-router-dom';
 
-const Projects = () => {
+const ProjectsPage = () => {
 
+    const navigate = useNavigate();
     const [ counter, setCounter ] = useState(0);
 
     const projectImage = [ecommerce, pokedex, landingPage];
@@ -37,6 +40,10 @@ const Projects = () => {
             setCounter(counter-1)
         }
     }
+
+    const goToProjects = () => {
+        navigate('/proyectos');
+    }
     
     console.log(counter);
 
@@ -66,23 +73,23 @@ const Projects = () => {
                         </div>
                     </div>
                     <Project 
-                        img={projectImage[0]} 
-                        title={projectTitle[0]}
-                        link={projectLink[0]}
-                        technologies={projectTechnologies[0]}
-                    />
-                    <Project 
                         img={projectImage[1]} 
                         title={projectTitle[1]}
                         link={projectLink[1]}
                         technologies={projectTechnologies[1]}
                     />
+                    <Project 
+                        img={projectImage[2]} 
+                        title={projectTitle[2]}
+                        link={projectLink[2]}
+                        technologies={projectTechnologies[2]}
+                    />
                     <button onClick={next} className='projects-arrow-btns'><i className="fa-solid fa-caret-right"></i></button>
                 </div>
-                <button className='projects-btn'>VER TODOS</button>
+                <button className='projects-btn' onClick={goToProjects}>VER TODOS</button>
             </div>
         </div>
     );
 };
 
-export default Projects;
+export default ProjectsPage;
