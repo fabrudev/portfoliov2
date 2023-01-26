@@ -4,7 +4,7 @@ import memoji2 from '../assets/memoji2.png'
 
 const AboutMe = () => {
     return (
-        <div className='about-me'>
+        <div className='about-me' id='about-me'>
             <img src={memoji2} alt="memoji2" />
             <div className="text-container">
                 <h3>¿Quién <span>Soy</span>?</h3>

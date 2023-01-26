@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import './ProjectsPageStyles.css';
-import ecommerce from '../assets/projects-images/ecommerce.png';
+import pricingPage from '../assets/projects-images/pricing.png';
 import pokedex from '../assets/projects-images/pokedex.png';
 import landingPage from '../assets/projects-images/landing-page.png';
 import Project from '../components/Project';
-import Projects from '../routes/Projects';
 import { useNavigate } from 'react-router-dom';
 
 const ProjectsPage = () => {
@@ -12,16 +11,16 @@ const ProjectsPage = () => {
     const navigate = useNavigate();
     const [ counter, setCounter ] = useState(0);
 
-    const projectImage = [ecommerce, pokedex, landingPage];
-    const projectTitle = ['E-Commerce', 'Pokédex', 'Landing Page'];
+    const projectImage = [pokedex, landingPage, pricingPage];
+    const projectTitle = ['Pokédex', 'Landing Page', 'Pricing Page'];
     const projectLink = [
-        'https://store-fabrudev.netlify.app/',
         'https://pokedex-fabrudev.netlify.app/',
-        'https://landingpage-fabrudev.netlify.app'
+        'https://landingpage-fabrudev.netlify.app',
+        'https://pricingpage-fabrudev.netlify.app'
     ]
     const projectTechnologies = [
         'HTML CSS REACT REDUX API',
-        'HTML CSS REACT REDUX API',
+        'HTML CSS REACT',
         'HTML CSS REACT'
     ];
 
