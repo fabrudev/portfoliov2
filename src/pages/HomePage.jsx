@@ -13,7 +13,6 @@ const HomePage = () => {
                 <h3>Desarrollador Frontend</h3>
             </div>
             <a className='button' download='' href={cv}>Descargar CV</a>
-            <i className="fa-solid fa-arrow-down-long"></i>
         </div>
     );
 };

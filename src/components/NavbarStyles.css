@@ -1,15 +1,16 @@
 .navbar {
-    padding: 30px 100px;
+    width: 100%;
+    position: absolute;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
 }
 
 .navbar p {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 700;
     cursor: default;
+    margin: 20px 0 0 10%;
 }
 
 .navbar p span {
@@ -22,54 +23,22 @@
     -moz-text-fill-color: transparent;
 }
 
-.horizontal-menu {
-    display: flex;
-    gap: 40px;
+.navbar i {
+    margin: 20px 10% 0 0;
+    font-size: 25px;
 }
 
-.navbar a {
-    border-radius: 2px;
-    color: #F0F2F5;
+.navbar i:hover {
+    cursor: pointer;
 }
 
-.navbar a:hover {
-    border-bottom: 2px solid #F0F2F5;
-}
-
-.vertical-menu {
-    padding: 10px 0 0 5px;
-    position: absolute;
-    display: none;
-    width: 150px;
-    background: rgb(22, 21, 19);
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-}
-
-.vertical-menu li {
-    margin-bottom: 10px;
-}
-
-.horizontal-menu li:hover .vertical-menu {
-    display: block;
-}
-
-.vertical-menu a {
-    font-size: 14px;
-}
-
-@media screen and (max-width: 900px) {
-    .navbar {
-        justify-content: center;
+@media screen and (max-width: 390px) {
+    .navbar p {
+        font-size: 24px;
     }
-    .horizontal-menu {
-        display: none;
-    }
-}
 
-@media screen and (max-width: 500px) {
-    .navbar {
-        padding: 20px 0;
+    .navbar i {
+        font-size: 21px;
     }
 }
 
