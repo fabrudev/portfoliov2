@@ -6,7 +6,7 @@
     justify-content: space-between;
 }
 
-.navbar p {
+.navbar p{
     font-size: 28px;
     font-weight: 700;
     cursor: default;
@@ -21,11 +21,6 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-}
-
-.navbar i {
-    margin: 20px 10% 0 0;
-    font-size: 25px;
 }
 
 .navbar i:hover {

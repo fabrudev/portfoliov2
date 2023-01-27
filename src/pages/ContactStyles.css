@@ -92,11 +92,11 @@
 
 @media screen and (max-width: 440px) {
     .contact h3 {
-        font-size: 38px;
+        font-size: 50px;
     }
 
     .contact .text {
-        font-size: 10px;
+        font-size: 13px;
     } 
 
     .contact .send-mail {

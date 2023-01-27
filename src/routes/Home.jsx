@@ -9,9 +9,7 @@ import Technologies from '../pages/Technologies';
 const Home = () => {
     return (
         <>
-            <div className="App">
-                <Navbar />
-            </div>
+            <Navbar />
             <HomePage />
             <AboutMe />
             <Technologies />

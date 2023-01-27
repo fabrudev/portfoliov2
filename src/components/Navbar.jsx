@@ -5,7 +5,6 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <p>Fabru-<span>Dev</span></p>
-            <i className="fa-solid fa-bars"></i>
         </div>
     );
 };
