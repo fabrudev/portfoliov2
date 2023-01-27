@@ -13,6 +13,13 @@
     margin: 20px 0 0 10%;
 }
 
+.navbar a{
+    margin: 20px 10% 0 0;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline;
+}
+
 .navbar p span {
     background-color: #F0F2F5;
     background-image: linear-gradient(100deg, rgba(177,108,234,1) 0%, rgba(255,94,105,1) 38%, rgba(255,138,86,1) 78%, rgba(255,168,75,1) 100%);
