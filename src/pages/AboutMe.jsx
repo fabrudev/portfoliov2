@@ -14,7 +14,7 @@ const AboutMe = () => {
                     Actualmente sigo estudiando en la Academia y de manera autodidacta para ser Full-Stack. <br />
                     Soy amante de los ejercicios de lógica, a todos mis proyectos los realizo con mucho entusiasmo.
                     Me gusta pasar tiempo diseñando para que todo quede PERFECTO. <br />
-                    Ademas de todo esto, soy DJ, me encanta la música! 😉 
+                    Además de todo esto, soy DJ, me encanta la música! 😉 
                 </p>
                 <div className="location">
                     <i className="fa-solid fa-location-dot"></i>

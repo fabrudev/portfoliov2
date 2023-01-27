@@ -131,19 +131,19 @@
     width: 180px;
     height: 40px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     border: none;
     border-radius: 6px;
     color: #F0F2F5;
+    transition: .3s;
     background: rgb(177, 108, 234);
     background: linear-gradient(100deg, rgba(177, 108, 234, 1) 0%, rgba(255, 94, 105, 1) 38%, rgba(255, 138, 86, 1) 78%, rgba(255, 168, 75, 1) 100%);
 }
 
 .projects-btn:hover {
     cursor: pointer;
-    background: transparent;
-    border: 3px solid #F0F2F5;
-    transition: .1s;
+    text-decoration: underline;
+    transform: scale(1.02);
 }
 
 @media screen and (max-width: 768px) {

@@ -68,7 +68,6 @@ const ProjectsPage = () => {
                             <div className="project-technologies">
                                 <p>{projectTechnologies[counter]}</p>
                             </div>
-                            <button>Ver Más</button>
                         </div>
                     </div>
                     <Project 
@@ -85,7 +84,7 @@ const ProjectsPage = () => {
                     />
                     <button onClick={next} className='projects-arrow-btns'><i className="fa-solid fa-caret-right"></i></button>
                 </div>
-                <button className='projects-btn' onClick={goToProjects}>VER TODOS</button>
+                <button className='projects-btn' onClick={goToProjects}>Ver todos</button>
             </div>
         </div>
     );
