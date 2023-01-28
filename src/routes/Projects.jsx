@@ -51,7 +51,7 @@ const Projects = () => {
                 <RouteProject 
                     img= {miniPortfolio}
                     title= 'Mini Portfolio'
-                    link= '#'
+                    link= 'https://miniportfolio-fabrudev.netlify.app/'
                     techs= 'HTML CSS REACT'
                 />
                 <RouteProject 
