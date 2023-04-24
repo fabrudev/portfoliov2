@@ -1,6 +1,6 @@
 <h1>Portafolio Personal ❤️</h1>
 
-[Link del Proyecto](https://fabru-dev.netlify.app)
+[Link del Proyecto](https://fabrudev.netlify.app)
 
 ## Descripción 🏝️ 
 
