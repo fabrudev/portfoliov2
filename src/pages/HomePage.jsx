@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import './HomePageStyles.css'
 import memoji from '../assets/memoji.png'
 import cv from '../assets/cv.pdf'
 
 const HomePage = () => {
-    return (
+  return (
         <div className='home'>
             <img src={memoji} alt="memoji" />
             <div className="text-container">
@@ -14,7 +14,7 @@ const HomePage = () => {
             </div>
             <a className='button' download='' href={cv}>Descargar CV</a>
         </div>
-    );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage

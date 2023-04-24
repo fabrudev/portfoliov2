@@ -1,8 +1,8 @@
-import React from 'react';
-import './ContactStyles.css';
+import React from 'react'
+import './ContactStyles.css'
 
 const Contact = () => {
-    return (
+  return (
         <div className='contact'>
                 <div className="contact-text-container">
                     <h3>Contactame<span>!</span></h3>
@@ -15,24 +15,24 @@ const Contact = () => {
                     </a>
                     <ul>
                         <li>
-                            <a href="https://www.linkedin.com/in/fabrudev/" target='_blank'>
+                            <a href="https://www.linkedin.com/in/fabrudev/" target='_blank' rel="noreferrer">
                                 <i className="fa-brands fa-linkedin"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/FabruDJ" target='_blank'>
+                            <a href="https://github.com/fabrudev" target='_blank' rel="noreferrer">
                                 <i className="fa-brands fa-square-github"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://wa.me/543515111022?text=Hola!" target='_blank'>
+                            <a href="https://wa.me/543515111022?text=Hola!" target='_blank' rel="noreferrer">
                                 <i className="fa-brands fa-square-whatsapp"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
         </div>
-    );
-};
+  )
+}
 
-export default Contact;
+export default Contact
